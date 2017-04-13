@@ -1,0 +1,17 @@
+/*************************************************************/
+//*****************TOP MENU
+/*************************************************************/
+.et_header_style_centered #et_top_search {
+	display: none!important;
+}
+#top-menu-nav {
+	width: 100%;
+}
+#top-menu {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 15%;
+}
+/********************END******************************/

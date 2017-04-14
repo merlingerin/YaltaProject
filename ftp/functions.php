@@ -8773,6 +8773,12 @@ function theme_styles()
 	wp_register_style( 'Roboto', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic' );
 	wp_enqueue_style('Roboto');
 
+	wp_register_style( 'fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
+	wp_enqueue_style('fontawesome');
+
+	wp_register_style( 'Playfair', 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic' );
+	wp_enqueue_style('Playfair');
+
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
 

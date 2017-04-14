@@ -1,0 +1,215 @@
+/*************************************************************/
+//*****************MAIN PAGE CONTENT
+/*************************************************************/
+#main_page_content {
+	display: flex;
+	flex-direction: row;
+}
+/********************END******************************/
+
+/*************************************************************/
+//*****************SIDEBAR
+/*************************************************************/
+#side_bar {
+	flex: 0 0 25%;
+	width: 25%;
+	margin-right: 3%;
+	padding: 0;
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		line-height: 1em;
+		margin: 0;
+		padding: 0;
+		cite {
+		    color: #42a5f5;
+		    font-style: normal;
+		}
+	}
+	.et_pb_widget_area_left { border-right: none;}
+	.widgettitle {
+		color: $dark_blue;
+		font-size: 1.13em;
+		font-weight: 700;
+	    padding-bottom: 8%;
+	}
+	.widget_text {
+	    padding: 9% 6.5%;
+	    border: 1px solid #9bb8c7;
+	    background-color: #F7FAFF;
+        margin: 0;
+	    margin-bottom: 11.1%;
+		&:nth-child(2) {
+			padding-bottom: 3%;
+		}
+	}
+    .frame_sub-title {
+    	color: $blue;
+    	font-size: 14px;
+    	font-weight: 700;
+    	padding-bottom: 0.6em;
+    	position: relative;
+    }
+	.frame_text {
+    	color: $dark_blue;
+    	font-size: 0.857em;
+    	font-weight: 400;
+    	padding-bottom: 1.7em;
+    }
+    .frame_list {
+    	.frame_list_item {
+    		padding-bottom: 0.5em;
+    		position: relative;
+    		padding-left: 	5%;
+    		font-weight: 400;
+		    font-size: 14px;
+    		&:before {
+    			content: "";
+    			width: 5px;
+    			height: 5px;
+    			border-radius: 50%;
+    			background-color: $dark_blue;
+    			position: absolute;
+			    left: 0;
+			    top: 4px;
+    		}
+    	}
+    }
+    .btn-frame {
+    	text-align: center;
+    }
+    .btn-booking {
+	    font-size: 12px;
+	    padding: 0.8% 9.4%;
+	    display: inline-block;
+	    background-color: $dark_blue;
+	    color: #fff;
+        box-shadow: 0px 0px 10px #e6e6e6;
+	    border: 4px solid #fff;
+	    border-radius: 5px;
+	    margin-top: 11%;
+    }
+    /*************************************************************/
+    //*****************FRAME 2
+    /*************************************************************/
+    .frame_2 {
+    	.frame_sub-title {
+    		padding-left: 12%;
+		    padding-bottom: 1.5em;
+    	}
+    }
+    /********************END******************************/
+
+
+    /*************************************************************/
+    //*****************FRAME 3
+    /*************************************************************/
+	#accordion {
+		h3 {
+			position: relative;
+			background: transparent;
+			border: none;
+		    font-size: 14px;
+		    padding-left: 0;
+			span {
+				position: absolute;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+		}
+		.ui-accordion-content {
+			background: transparent;
+			padding: 0;
+			border: none;
+			li {
+				font-size: 12px;
+				font-weight: 400;
+				cite {
+					color: #42a5f5;
+					font-style: normal;
+				}
+			}
+		}
+	}
+    /********************END******************************/
+
+
+    /*************************************************************/
+    //*****************FRAME 4
+    /*************************************************************/
+    .must_know.frame_list .frame_list_item {
+		padding-bottom: 1.4em;
+    }
+    
+    /********************END******************************/
+
+	/*************************************************************/
+	//*****************FRAME TESTIMOTIONS
+	/*************************************************************/
+	.testimotions.frame_list {
+		.testimotion_name {
+			padding-left: 5%;
+			padding-bottom: 2em;
+		}
+	}
+	.testimotions.frame_list > li:nth-child(1) {
+			padding-bottom: 1.1em;
+	}
+	/********************END******************************/
+
+
+
+
+
+}
+#side_bar > div {
+	padding-right: 0;
+}
+/********************END******************************/
+
+
+
+
+/*************************************************************/
+//*****************MAIN CONTENT
+/*************************************************************/
+#main_content {
+	flex: 0 0 72%;
+	width: 72%;
+}
+/********************END******************************/
+
+
+
+
+
+/*************************************************************/
+//*****************MAIN CONTENT
+/*************************************************************/
+#main_content {
+	.header_gallery_top {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: row;
+	
+		.header_gallery_left {
+		    flex: 0 0 35%;
+		    margin-right: 0;
+		    .et_pb_gallery_item:nth-child(2) {
+		    	margin-bottom: 0;
+		    }
+		}
+		.header_gallery_right {
+		    height: auto;
+		    flex: 0 0 60%;
+		    margin-left: auto;
+		    align-self: stretch;
+		}
+	}	
+}
+
+/********************END******************************/

@@ -1,0 +1,52 @@
+#main-header {
+	box-shadow: none;
+}
+
+.frame_sub-title_dark {
+	color: $dark_blue!important;
+}
+
+/*************************************************************/
+//*****************ICONS IFRAME 2
+/*************************************************************/
+.icon_wifi, .icon_parking, .icon_car, .icon_family, .icon_dog, .icon_nosmoking {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-image: url("../images/sprite_ifram_2.png");
+	background-position: 0 0;
+	position: absolute;
+	left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+}
+.icon_wifi {
+	background-position: -1px -1px;
+}
+.icon_parking {
+    background-position: -36px -1px;
+}
+.icon_car {
+    background-position: -68px -3px;
+}
+.icon_family {
+	background-position: -100px -2px;
+}
+.icon_dog {
+    background-position: -134px -2px;
+}
+.icon_nosmoking {
+    background-position: -171px 0px;
+}
+/********************END******************************/
+
+/*************************************************************/
+//*****************ACCORDION IMAGES
+/*************************************************************/
+.ui-icon-accordion {
+	background-image: url("../images/accordion_arrow.png")!important;
+}
+.ui-icon-accordion-passive {
+	background-image: url("../images/accordion_arrow_passive.png")!important;
+}
+/********************END******************************/

@@ -8764,8 +8764,9 @@ function theme_styles()
 { 
 
 	// Example of loading a jQuery slideshow plugin just on the homepage
-	wp_register_style( 'my_style', get_template_directory_uri() . '/css/my_style.css' );
-	wp_enqueue_style('my_style');
+
+	wp_register_style( 'fancybox_style', get_template_directory_uri() . '/js/fancybox/jquery.fancybox.min.css' );
+	wp_enqueue_style('fancybox_style');
 
 	wp_register_style( 'jquery_ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css' );
 	wp_enqueue_style('jquery_ui');
@@ -8779,6 +8780,9 @@ function theme_styles()
 	wp_register_style( 'Playfair', 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;subset=cyrillic' );
 	wp_enqueue_style('Playfair');
 
+	wp_register_style( 'my_style', get_template_directory_uri() . '/css/my_style.css' );
+	wp_enqueue_style('my_style');
+
 }
 add_action('wp_enqueue_scripts', 'theme_styles');
 
@@ -8789,6 +8793,9 @@ wp_enqueue_script('jquerry_2');
 
 wp_register_script('jquerry_UI', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"', false);
 wp_enqueue_script('jquerry_UI');
+
+wp_register_script('fancybox', get_template_directory_uri() . '/js/fancybox/jquery.fancybox.min.js', false);
+wp_enqueue_script('fancybox');
 
 wp_register_script('my_scripts', get_template_directory_uri() . '/js/my_scripts.js', false);
 wp_enqueue_script('my_scripts');

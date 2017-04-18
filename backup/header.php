@@ -213,7 +213,7 @@
 						</ul>
 					</div>
 					<div class="header_top_middle">
-						<a href="/"><img src= "/wp-content/themes/Divi/images/logo.png"  /></a>
+						<a href="/"><img src="wp-content/themes/Divi/images/logo.png" /></a>
 					</div>
 					<div class="header_top_right">
 						<ul class="header_top_contacts">

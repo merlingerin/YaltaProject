@@ -54,7 +54,7 @@
     }
 	.frame_text {
     	color: $dark_blue;
-    	font-size: 0.857em;
+    	font-size: 0.757em;
     	font-weight: 400;
     	padding-bottom: 1.7em;
     }
@@ -64,7 +64,7 @@
     		position: relative;
     		padding-left: 	5%;
     		font-weight: 400;
-		    font-size: 14px;
+		    font-size: 12px;
     		&:before {
     			content: "";
     			width: 5px;
@@ -190,6 +190,7 @@
 /*************************************************************/
 //*****************MAIN CONTENT
 /*************************************************************/
+
 #main_content {
 	.header_gallery_top {
 		display: flex;
@@ -197,8 +198,11 @@
 	    flex-direction: row;
 	
 		.header_gallery_left {
-		    flex: 0 0 35%;
+		    flex: 0 0 37%;
 		    margin-right: 0;
+		    .et_pb_gallery_item  {
+		    	margin-bottom: 10%;
+		    }
 		    .et_pb_gallery_item:nth-child(2) {
 		    	margin-bottom: 0;
 		    }
@@ -209,7 +213,209 @@
 		    margin-left: auto;
 		    align-self: stretch;
 		}
-	}	
+	}
+	.big_photo {
+		height: 100%;
+		.et_pb_gallery_items {
+			height: 100%;
+		}
+		.et-pb-slider-arrows, .et-pb-controllers {
+			display: none;
+		}
+		.et_pb_gallery_item {
+			margin-bottom: 0;
+			height: 100%;
+			.et_pb_gallery_image {
+				height: 100%;
+				img {
+					height: 100%;
+				}
+			}
+		}
+	}
+	.bottom_gallery {
+		.et_pb_gallery_item.et_pb_grid_item {
+			width: 31.66666666%;
+			margin-right: 2.5%;
+			margin-bottom: 0;
+		}
+	}
+	.bottom_gallery_row {
+		padding-bottom: 5%;
+	}
+	.bottom_gallery, .header_gallery_left, .header_gallery_right {
+		.et_overlay { display: none; }
+	}
+	
+	
+
+	/*************************************************************/
+	//*****************SECTION APP MORE
+	/*************************************************************/
+	.yalta-app  {
+		padding: 5% 0;
+		h2 {
+			font-size: 30px;
+			font-weight: 400;
+		}
+	}
+	.yalta-app .btn-booking {
+        padding: 0% 3.4%;
+	    margin-top: 2%;
+    }
+	/********************END******************************/
 }
+
+/*************************************************************/
+//*****************SECTION DESCRIPTION
+/*************************************************************/
+#main_content #section_description {
+    padding-top: 3%;
+	color: #333333;
+	.et_pb_column {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.flextext_tavrida {
+		flex: 0 0 100%;
+	}
+	h2 {
+		font-size: 30px;
+		color: #333333;
+	}
+	.desc_img {
+		flex: 0 0 34%;
+		margin: 0;
+		padding: 0;
+	}
+	.desc_text {
+		flex: 0 0 63%;
+		font-size: 14px;
+		line-height: 22px;
+		margin: 0;
+		padding: 0;
+		h5 {
+			font-size: 14px;
+		}
+	}
+	.desc_map {
+		flex: 0 0 100%;
+		min-height: 270px;
+	}
+	.et_pb_map {
+		min-height: 270px;
+		height: 270px;
+	}
+	.et_pb_module {
+		margin-bottom: 7%;
+	}
+	.list_famous {
+		padding-left: 3%;
+		font-size: 14px;
+		line-height: 22px;
+		padding-bottom: 2em;
+	}
+	ul {
+	    width: 50%;
+	    padding: 0;
+	    margin: 0;
+	    float: left;
+	}
+	cite {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+/********************END******************************/
+
+
+
+/*************************************************************/
+//*****************TABLE FALTS
+/*************************************************************/
+#table_flats {
+	table th {
+		color: $black;
+	}
+	thead th {
+		font-family: 'Playfair Display', sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		background-color: #ca9f29;
+		border: 1px solid #ca9f29;
+		border-right: 1px solid #999999;
+	}
+	thead th:last-of-type {
+		border-right: 1px solid #ca9f29;
+	}
+	tbody th {
+		border: 1px solid #999999;
+	}
+	.tbody_app_type {
+		padding-top: 2%;
+	}
+	.tbody_app_type ul li {
+		color: $black;
+		font-size: 12px;
+		font-weight: 400;
+		list-style: none;
+		line-height: 3.2em;
+		position: relative;
+		.btn-booking {
+			background-color: transparent;
+			border: none;
+			box-shadow: none;
+			color: #ca9f29;
+			font-size: 14px;
+			font-weight: 400;
+			padding: 0;
+			margin-top: 0;
+		}
+		&:before {
+			content: "";
+		    width: 27px;
+		    height: 34px;
+		    display: inline-block;
+		    position: absolute;
+		    left: -30px;
+		    top: 0;
+		    bottom: 0;
+		    margin: auto 0;
+		    background-image: url(/wp-content/themes/Divi/images/sprite-app.png);
+		    background-size: cover;
+		    background-position: -1px -8px;
+		}
+		&:nth-child(1):before{
+			 background-position: -1px -8px;
+		}
+		&:nth-child(2):before {
+			background-position: -28px -8px;
+		}		
+		&:nth-child(3):before {
+		    background-position: -56px -8px;
+		}		
+		&:nth-child(4):before {
+		    background-position: -85px -8px;
+		}		
+		&:nth-child(5):before {
+		    background-position: -119px -8px;
+		}
+		&:last-of-type {
+			text-align: center;
+			&:before {
+				display: none;
+			}
+		}
+
+	}
+	.tbody_app_type h4 {
+		font-size: 14px;
+		color: $black;
+		font-weight: 700;
+	}
+
+}
+/********************END******************************/
 
 /********************END******************************/
